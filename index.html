@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#536044" />
+  <meta name="description" content="The wedding invitation of Nuhman & Shahna — 14 June 2027, Aalakkod, Kerala." />
+  <title>Nuhman & Shahna — Wedding Invitation</title>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+</head>
+
+<body class="locked">
+
+  <!-- =========================================================
+       IMPORTANT: Keep these filenames exactly as written.
+       Put openingIMG.png, openingScene.mp4 and HeroIMG.png
+       beside this HTML file, or change only the paths later.
+       ========================================================= -->
+
+  <!-- OPENING EXPERIENCE -->
+  <section id="opening" aria-label="Wedding invitation opening">
+    <img class="opening-image" src="images/openingIMG.png" alt="Nuhman and Shahna wedding invitation envelope">
+    <video id="openingVideo" class="opening-video" playsinline preload="auto">
+      <source src="assets/openingScene.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <audio id="weddingAudio" loop preload="auto">
+      <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    <div class="opening-shade"></div>
+
+    <button class="open-hit" id="openInvitation" aria-label="Open wedding invitation"></button>
+
+
+    <button class="sound-toggle" id="openingSoundToggle" type="button" aria-label="Turn wedding music on" aria-pressed="false">♪</button>
+  </section>
+
+  <!-- NAVIGATION -->
+  <header class="site-nav" id="siteNav">
+    <a class="brand" href="#home">Nuhman &amp; Shahna</a>
+    <button class="sound-toggle" id="headerSoundToggle" type="button" aria-label="Turn wedding music on" aria-pressed="false">♪</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-media">
+        <img src="images/HeroIMG.png" alt="Nuhman and Shahna in a botanical garden">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="petals" aria-hidden="true">
+        <i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i>
+      </div>
+
+      <div class="hero-content">
+        <div class="small">Together with their families</div>
+        <h1 class="couple">Nuhman <br> &amp; <br> Shahna</h1>
+        <div class="hero-sub">invite you to celebrate their wedding</div>
+        <div class="ornament"><span>✦</span></div>
+      </div>
+
+      <a class="hero-scroll" href="#date">
+        Explore
+        <span></span>
+      </a>
+    </section>
+
+    <!-- DATE + COUNTDOWN -->
+    <section id="date" class="section date-section">
+      <div class="section-inner">
+        <div class="date-card reveal">
+          <div class="eyebrow">Our Wedding Date</div>
+          <h2>Scratch &amp; Reveal</h2>
+
+          <div class="scratch-wrap" id="scratchArea" aria-label="Scratch to reveal the wedding date">
+            <div class="revealed-date">
+    <div class="date-box">
+      <span class="value">14</span>
+      <span class="label">DAY</span>
+      <canvas class="scratch-canvas" aria-label="Scratch to reveal the wedding day"></canvas>
+    </div>
+    <div class="date-box">
+      <span class="value">06</span>
+      <span class="label">MONTH</span>
+      <canvas class="scratch-canvas" aria-label="Scratch to reveal the wedding month"></canvas>
+    </div>
+    <div class="date-box">
+      <span class="value">2027</span>
+      <span class="label">YEAR</span>
+      <canvas class="scratch-canvas" aria-label="Scratch to reveal the wedding year"></canvas>
+    </div>
+  </div>
+          </div>
+
+          <p class="scratch-label">Scratch or swipe gently to reveal our special day</p>
+          <p class="revealed-celebration" id="celebration">A little date worth remembering ✦</p>
+
+          <div class="countdown" aria-label="Countdown to wedding">
+            <div class="time-box"><strong id="days">000</strong><span>Days</span></div>
+            <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
+            <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
+            <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="section">
+      <div class="section-inner story-grid">
+        <div class="story-copy reveal">
+          <div class="eyebrow">Our Story</div>
+          <h3>Two hearts,<br>one beautiful journey.</h3>
+          <p>
+            From the little moments to the big dreams, our story has always been
+            about love, trust and growing together. Now, surrounded by the people
+            we love most, we begin a beautiful new chapter.
+          </p>
+          <p>
+            This invitation is a little window into the day we have been waiting for.
+          </p>
+        </div>
+
+        <div class="story-collage reveal" aria-label="Couple photo collage">
+          <div class="story-photo one"><img 			src="images/story-1.jpg" 	alt="Couple photograph"></div>
+          <div class="story-photo two"><img 	src="images/story-2.jpg" 	alt="Wedding garden detail"></div>
+          <div class="story-photo three"><img 	src="images/story-3.jpg" 	alt="Couple photograph" alt="Botanical wedding scene"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section">
+      <div class="section-inner">
+        <div style="text-align:center" class="reveal">
+          <div class="eyebrow">Wedding Events</div>
+          <h2>A day filled with love &amp; blessings</h2>
+          <p class="section-intro">
+            A simple timeline for the moments that matter. Replace the event details
+            below with the final schedule whenever it is confirmed.
+          </p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-progress" id="timelineProgress"></div>
+          <div class="timeline-flower" id="timelineFlower">✿</div>
+
+          <article class="timeline-item reveal">
+            <span class="event-dot"></span>
+            <div class="event-card">
+              <div class="event-date">14 June 2027 · 10:00 AM</div>
+              <h3>Nikkah</h3>
+              <p><strong>Aalakkod, Kerala</strong></p>
+              <p>The beginning of our forever, surrounded by family and blessings.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="event-dot"></span>
+            <div class="event-card">
+              <div class="event-date">14 June 2027 · 5:00 PM</div>
+              <h3>Reception</h3>
+              <p><strong>Aalakkod, Kerala</strong></p>
+              <p>Celebrating with the people who make our lives beautiful.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="event-dot"></span>
+            <div class="event-card">
+              <div class="event-date">14 June 2027 · 8:00 PM</div>
+              <h3>Wedding Party</h3>
+              <p><strong>Aalakkod, Kerala</strong></p>
+              <p>Good food, great company and memories to carry home.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    <section id="venue" class="section venue">
+      <div class="section-inner venue-grid">
+        <div class="venue-image reveal">
+          <img 	src="images/venue.jpg" 	alt="Aalakkod wedding setting">
+        </div>
+
+        <div class="venue-copy reveal">
+          <div class="eyebrow">The Venue</div>
+          <h3>Aalakkod</h3>
+          <p>
+            A beautiful Kerala setting for a day filled with love, laughter and
+            blessings. The final venue/address can be added here once confirmed.
+          </p>
+          <a
+            class="map-btn"
+            href="https://www.google.com/maps/search/?api=1&query=Aalakkod%2C%20Kerala%2C%20India"
+            target="_blank"
+            rel="noopener"
+          >⌖ &nbsp; View on Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-inner">
+        <div style="text-align:center" class="reveal">
+          <div class="eyebrow">Our Gallery</div>
+          <h2>Moments we'll cherish forever</h2>
+          <p class="section-intro">Replace these image sources with the couple's actual gallery images.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img src="images/gallery-1.jpg" alt="Wedding moment 1"></figure>
+          <figure class="gallery-item reveal"><img src="images/gallery-2.jpg" alt="Wedding stationery"></figure>
+          <figure class="gallery-item reveal"><img src="images/gallery-3.jpg" alt="Wedding moment 2"></figure>
+          <figure class="gallery-item reveal"><img src="images/gallery-4.jpg" alt="Wedding moment 3"></figure>
+          <figure class="gallery-item reveal"><img src="images/gallery-5.jpg" alt="Wedding invitation detail"></figure>
+          <figure class="gallery-item reveal"><img src="images/gallery-6.png" alt="Wedding moment 4"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
+      <div class="section-inner">
+        <div class="rsvp-card reveal">
+          <div style="text-align:center">
+            <div class="eyebrow">Kindly RSVP</div>
+            <h2>Will you be joining us?</h2>
+            <p class="section-intro" style="margin-bottom:30px">
+              Please let us know so we can prepare a place for you.
+            </p>
+          </div>
+
+          <form id="rsvpForm">
+            <div class="form-grid">
+              <div class="field full">
+                <label for="guestName">Guest name *</label>
+                <input id="guestName" name="guestName" required placeholder="Enter your name">
+              </div>
+
+              <div class="field">
+                <label for="attendance">Will you be attending? *</label>
+                <select id="attendance" name="attendance" required>
+                  <option value="">Choose one</option>
+                  <option>Yes, I'll be there</option>
+                  <option>Sorry, I can't make it</option>
+                  <option>Maybe</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="guests">Number of guests</label>
+                <select id="guests" name="guests">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5+</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write a little message..."></textarea>
+              </div>
+            </div>
+
+            <div class="rsvp-actions">
+              <button class="submit-btn" type="submit">Submit RSVP →</button>
+
+              <!-- Replace 919XXXXXXXXX with the final WhatsApp number -->
+              <a
+                class="whatsapp"
+                href="https://wa.me/918606240792?text=Hello%20Nuhman%20%26%20Shahna%2C%20I%20would%20like%20to%20RSVP%20for%20your%20wedding."
+                target="_blank"
+                rel="noopener"
+              >◉ RSVP on WhatsApp</a>
+            </div>
+
+            <p class="form-note">
+              The demo form shows a confirmation message in the browser.
+              Connect it to Formspree, Google Forms, a backend, or your preferred
+              RSVP service when you are ready to collect responses.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">Nuhman &amp; Shahna</a>
+    <div class="ornament"><span>✦</span></div>
+    <p>14.06.2027 · AALAKKOD, KERALA</p><br>
+<p class="footer-credit">
+    © Made by <strong>Invitora</strong><br>
+    <span class="social-links">
+      <!-- Instagram Link -->
+      <a href="https://www.instagram.com/_.invitora/?__pwa=1" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+
+      <!-- Facebook Link -->
+      <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      </a>
+
+      <!-- Website Link -->
+      <a href="https://yourwebsite.com" target="_blank" rel="noopener" aria-label="Website" class="social-link">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      </a>
+    </span>
+  </p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">×</button>
+    <img id="lightboxImage" src="" alt="Expanded gallery image">
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
